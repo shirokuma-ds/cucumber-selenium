@@ -1,10 +1,11 @@
-package org.shirokuma.page;
+package org.shirokuma.page.bulbapedia;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.shirokuma.driver.DriverManager;
+import org.shirokuma.page.BasePage;
 
 public class BulbapediaPage extends BasePage {
     public BulbapediaPage(DriverManager driverManager) {

@@ -1,9 +1,9 @@
-package org.shirokuma.step;
+package org.shirokuma.step.bulbapedia;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.shirokuma.page.BulbapediaPage;
+import org.shirokuma.page.bulbapedia.BulbapediaPage;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalToIgnoringCase;
@@ -14,7 +14,7 @@ public class BulbapediaSteps {
         this.bulbapediaPage = bulbapediaPage;
     }
 
-    private BulbapediaPage bulbapediaPage;
+    private final BulbapediaPage bulbapediaPage;
 
     @Given("I open Bulbapedia")
     public void iOpenBulbapedia() {

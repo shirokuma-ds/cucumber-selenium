@@ -1,10 +1,10 @@
-package org.shirokuma.step;
+package org.shirokuma.step.yugioh;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.shirokuma.page.YugiOhPage;
+import org.shirokuma.page.yugioh.YugiOhPage;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalToIgnoringCase;
@@ -15,7 +15,7 @@ public class YugiOhSteps {
         this.yugiOhPage = yugiOhPage;
     }
 
-    private YugiOhPage yugiOhPage;
+    private final YugiOhPage yugiOhPage;
 
     @Given("I open Yugi Oh DB")
     public void iOpenYugiOhDB() {

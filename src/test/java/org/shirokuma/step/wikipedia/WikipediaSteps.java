@@ -1,9 +1,9 @@
-package org.shirokuma.step;
+package org.shirokuma.step.wikipedia;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.shirokuma.page.WikipediaPage;
+import org.shirokuma.page.wikipedia.WikipediaPage;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalToIgnoringCase;
@@ -14,7 +14,8 @@ public class WikipediaSteps {
         this.wikipediaPage = wikipediaPage;
     }
 
-    private WikipediaPage wikipediaPage;
+    private final WikipediaPage wikipediaPage;
+
     @Given("I open Wikipedia")
     public void iOpenWikipedia() {
         wikipediaPage.driver().get("https://en.wikipedia.org");

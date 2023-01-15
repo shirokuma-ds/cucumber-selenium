@@ -1,4 +1,4 @@
-package org.shirokuma.page;
+package org.shirokuma.page.yugioh;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.shirokuma.driver.DriverManager;
+import org.shirokuma.page.BasePage;
 
 import java.util.List;
 
